@@ -1,3 +1,4 @@
+// @ts-ignore
 import Image from "next/image";
 import localFont from "next/font/local";
 const geistSans = localFont({
