@@ -52,10 +52,10 @@ export default function Home() {
   return (
       <div
       className={`${geistSans.variable} ${geistMono.variable}  bg-[#E7E0E0] items-center justify-items-center min-h-screen 
-      p-8 pb-20 gap-6 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
+      p-4 pb-20 gap-2 sm:p-10 font-[family-name:var(--font-geist-sans)]`}
       >
         <Link href={'https://www.yadnxd.com'} className="" >
-      <Image className=" m-5"
+      <Image className=" m-4"
         height={200}
         width={200} 
         src={Original_logo_colors} 
