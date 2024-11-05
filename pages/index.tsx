@@ -69,10 +69,10 @@ export default function Home() {
             { socialMedia.map(( d: any, i: any ) => (
               <Link href={d.url}key={i}>
               <div className=" card p-2 bg-[#2D3194] "   >
-              <Image className=" h-24 w-24 
+              <Image className=" h-20 w-20 
               lg:h-44  lg:w-44 
               md:h-44 md:w-44
-              sm:h-30 sm:w-30
+              sm:h-20 sm:w-20
               "
         height={150}
         width={150} 
