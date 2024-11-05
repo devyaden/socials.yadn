@@ -11,34 +11,40 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-import email from '../public/email.png'
-import fase from '../public/fase.png'
-import x from '../public/x.png'
+import email from '../public/email=ED1E78.svg'
+import fase from '../public/face=ED1E78.svg'
+import x from '../public/x=ED1E78.svg'
+import insta from '../public/insa=ED1E78.svg'
+import likedin from '../public/likein=ED1E78.svg'
+import tiktok from '../public/tiktok=ED1E78.svg'
+import phone from '../public/phone=ED1E78.svg'
+import whatsapp from '../public/whatapp=ED1E78.svg'
+import loc from '../public/maps=ED1E78.svg'
+import s from '../public/phone=ED1E78.svg'
 
 import Link from 'next/link'
 const socialMedia = [
   { name: 'Facebook', url: 'https://www.facebook.com', logo: fase },
   { name: 'x', url: 'https://x.com/yadnxd?t=xESgy0TMXyGCJivzdbRQ0A&s=09', logo:
-     'https://img.icons8.com/?size=256&id=ClbD5JTFM7FA&format=png' },
+    x },
   { name: 'Instagram', url: 'https://www.instagram.com/yadnxd?igsh=Y2xpYzFncWVwdzY5',
-     logo: 'https://img.icons8.com/?size=256&id=32323&format=png' },
+     logo: insta },
   { name: 'LinkedIn', url: 'https://www.linkedin.com/company/yadnxd/', 
-    logo: 'https://img.icons8.com/?size=256&id=13930&format=png' },
-  { name: 'TikTok', url: 'http://www.tiktok.com/@yadnxd', logo: 'https://img.icons8.com/?size=256&id=118640&format=png' },
+    logo: likedin },
+  { name: 'TikTok', url: 'http://www.tiktok.com/@yadnxd',
+     logo: tiktok },
   { name: 'TikTok', url: 'mailto:info@yadnxd.com', 
     logo: email },
     { name: 'TikTok', url: 'tel:966550513539', 
-      logo: 'https://img.icons8.com/?size=100&id=44208&format=png&color=2d3194'
+      logo: phone
  },
- { name: 'TikTok', url: 'https://maps.app.goo.gl/ZMZZ8cKnNqEyAyJ66', 
-  logo: 'https://img.icons8.com/?size=100&id=107436&format=png&color=000000'
+ { name: 'TikTok', url: 'https://wa.me/+966550513539', 
+  logo: whatsapp
 },
 { name: 'TikTok', url: 'https://maps.app.goo.gl/ZMZZ8cKnNqEyAyJ66', 
-  logo: 'https://img.icons8.com/?size=100&id=107436&format=png&color=000000'
+  logo: loc
 },
- { name: 'TikTok', url: 'https://maps.app.goo.gl/ZMZZ8cKnNqEyAyJ66', 
-  logo: 'https://drive.google.com/file/d/1Zcx6nuFdMvk3HnCAaRFy6lFzkd8z3hZB/view'
-},
+ 
 ];
 
 import Original_logo_colors from "../public/Original_logo_colors.png"
@@ -59,14 +65,14 @@ export default function Home() {
        
 
        
-       <div className=" grid md:grid-cols-4 lg:grid-cols-4 grid-cols-3 sm:grid-cols-3 gap-4">
+       <div className=" grid md:grid-cols-4 lg:grid-cols-4 grid-cols-2 sm:grid-cols-2 gap-4">
             { socialMedia.map(( d: any, i: any ) => (
               <Link href={d.url}key={i}>
-              <div className=" card  bg-green-700"   >
-              <Image className=" h-36 w-36 
+              <div className=" card p-2 "   >
+              <Image className=" h-28 w-28 
               lg:h-44  lg:w-44 
               md:h-44 md:w-44
-              sm:h-36 sm:w-36
+              sm:h-30 sm:w-30
               "
         height={150}
         width={150} 
