@@ -68,8 +68,8 @@ export default function Home() {
        <div className=" grid md:grid-cols-4 lg:grid-cols-4 grid-cols-2 sm:grid-cols-2 gap-4">
             { socialMedia.map(( d: any, i: any ) => (
               <Link href={d.url}key={i}>
-              <div className=" card p-2 "   >
-              <Image className=" h-28 w-28 
+              <div className=" card p-2 bg-[#2D3194] "   >
+              <Image className=" h-24 w-24 
               lg:h-44  lg:w-44 
               md:h-44 md:w-44
               sm:h-30 sm:w-30
